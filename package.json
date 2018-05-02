@@ -2,6 +2,9 @@
   "name": "nodejs",
   "version": "1.0.0",
   "description": "The tutorial walkthrough of nodejs udemy (andrew Mead)",
+  "engines": {
+    "npm": "5.7.1"
+  },
   "main": "app.js",
   "dependencies": {
     "axios": "^0.13.1",
@@ -17,7 +20,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node node-web-server/server.js"
+    "start": "node server.js"
   },
   "author": "Dilip Bhattarai",
   "license": "ISC"

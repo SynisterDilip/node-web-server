@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000;
 
 var app = express();
 
-hbs.registerPartials(__dirname + '/node-web-server/views/partials');
+hbs.registerPartials(__dirname + '/views/partials');
 hbs.registerHelper('getCurrebtYear', () => {
 	return new Date().getFullYear();
 });
@@ -28,7 +28,7 @@ app.use((request, response, next) => {
 // 	response.render('maintenance.hbs');
 // });
 
-app.use(express.static(__dirname + '/node-web-server/public'));
+app.use(express.static(__dirname + '/public'));
 
 app.set('view engine', 'hbs');
 
@@ -37,7 +37,7 @@ app.set('view engine', 'hbs');
 // });
 
 app.get('/', function(request, response) {
-	response.render('node-web-server/home.hbs', {
+	response.render('home.hbs', {
 		pageTitle: 'Home page',
 	});
 });
