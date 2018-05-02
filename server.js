@@ -42,7 +42,7 @@ app.get('/', function(request, response) {
 	});
 });
 
-app.get('about', function(request, response){
+app.get('/about', function(request, response){
 	response.render('about.hbs', {
 		pageTitle: 'About page',
 	});
